@@ -1,0 +1,17 @@
+Delete author by id
+---
+tags:
+  - AUTHOR
+
+parameters:
+  - in: path
+    name: id
+    description: The id of author which you want to delete
+    required: true
+
+responses:
+  200:
+    description: Delete successfully author
+
+  404:
+    description: Not found author by id

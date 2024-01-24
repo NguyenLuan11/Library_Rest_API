@@ -1,0 +1,36 @@
+Update book
+---
+tags:
+  - BOOKS
+parameters:
+  - in: path
+    name: id
+    description: The id of book which you want to update
+    required: true
+
+  - in: body
+    name: body
+    description: The body should contain the book's information data
+    required: true
+    schema:
+      type: object
+      required:
+        - "page_count"
+        - "author_id"
+        - "category_id"
+      properties:
+        page_count:
+          type: "int"
+          example: 500
+        author_id:
+          type: "int"
+          example: 1
+        category_id:
+          type: "int"
+          example: 1
+responses:
+  200:
+    description: When updated successfully book
+
+  400:
+    description: Fails to update book due to bad request data

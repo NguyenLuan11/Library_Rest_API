@@ -1,0 +1,35 @@
+Add new borrow
+---
+tags:
+  - BORROW
+parameters:
+  - in: body
+    name: body
+    description: The body should contain the information of borrow data
+    required: true
+    schema:
+      type: object
+      required:
+        - "book_id"
+        - "student_id"
+        - "borrow_date"
+        - "return_date"
+      properties:
+        book_id:
+          type: "int"
+          example: 1
+        student_id:
+          type: "int"
+          example: 1
+        borrow_date:
+          type: "string"
+          example: "2024-01-23"
+        return_date:
+          type: "string"
+          example: "2024-02-24"
+responses:
+  200:
+    description: When added successfully new borrow
+
+  400:
+    description: Fails to add new borrow due to bad request data

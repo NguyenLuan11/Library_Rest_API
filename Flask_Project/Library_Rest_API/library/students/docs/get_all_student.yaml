@@ -1,0 +1,11 @@
+Get all students
+---
+tags:
+  - STUDENTS
+
+responses:
+  200:
+    description: Get all students successful and return list of students
+
+  404:
+    description: Not found list of students

@@ -1,0 +1,18 @@
+Get User Information
+---
+tags:
+  - USER
+description: Endpoint to retrieve user information using a valid access token.
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+    type: string
+    default: 'Bearer [Access Token]'
+    description: Bearer token obtained during login
+responses:
+  200:
+    description: User Information Retrieved Successfully
+
+  401:
+    description: Unauthorized

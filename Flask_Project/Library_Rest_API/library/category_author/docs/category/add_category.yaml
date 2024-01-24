@@ -1,0 +1,23 @@
+Add new category
+---
+tags:
+  - CATEGORY
+parameters:
+  - in: body
+    name: body
+    description: The body should contain the category's information data
+    required: true
+    schema:
+      type: object
+      required:
+        - "name"
+      properties:
+        name:
+          type: "string"
+          example: "Giáo dục"
+responses:
+  200:
+    description: When added successfully new category
+
+  400:
+    description: Fails to add new category due to bad request data

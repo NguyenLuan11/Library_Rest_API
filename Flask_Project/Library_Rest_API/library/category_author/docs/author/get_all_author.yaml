@@ -1,0 +1,11 @@
+Get all authors
+---
+tags:
+  - AUTHOR
+
+responses:
+  200:
+    description: Get all authors successful and return list of authors
+
+  404:
+    description: Not found list of authors

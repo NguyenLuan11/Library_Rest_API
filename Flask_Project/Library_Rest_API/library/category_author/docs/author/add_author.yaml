@@ -1,0 +1,23 @@
+Add new author
+---
+tags:
+  - AUTHOR
+parameters:
+  - in: body
+    name: body
+    description: The body should contain the author's information data
+    required: true
+    schema:
+      type: object
+      required:
+        - "name"
+      properties:
+        name:
+          type: "string"
+          example: "Johnny Deep"
+responses:
+  200:
+    description: When added successfully new author
+
+  400:
+    description: Fails to add new author due to bad request data

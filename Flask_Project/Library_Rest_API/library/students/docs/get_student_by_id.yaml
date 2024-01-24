@@ -1,0 +1,17 @@
+Get student by id
+---
+tags:
+  - STUDENTS
+
+parameters:
+  - in: path
+    name: id
+    description: The id of student which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully student
+
+  404:
+    description: Not found student by id

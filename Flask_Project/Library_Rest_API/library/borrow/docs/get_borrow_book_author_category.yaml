@@ -1,0 +1,17 @@
+Get borrow by student
+---
+tags:
+  - BORROW
+
+parameters:
+  - in: path
+    name: student
+    description: The student's name of borrows which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully borrows
+
+  404:
+    description: Not found borrows by student's name

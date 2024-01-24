@@ -1,0 +1,17 @@
+Get book by category
+---
+tags:
+  - BOOKS
+
+parameters:
+  - in: path
+    name: category
+    description: The category's name of books which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully books
+
+  404:
+    description: Not found books by category's name

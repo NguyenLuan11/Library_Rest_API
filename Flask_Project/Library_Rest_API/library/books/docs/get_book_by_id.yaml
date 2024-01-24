@@ -1,0 +1,17 @@
+Get book by id
+---
+tags:
+  - BOOKS
+
+parameters:
+  - in: path
+    name: id
+    description: The id of book which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully book
+
+  404:
+    description: Not found book by id

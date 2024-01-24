@@ -1,0 +1,17 @@
+Delete borrow by id
+---
+tags:
+  - BORROW
+
+parameters:
+  - in: path
+    name: id
+    description: The id of borrow which you want to delete
+    required: true
+
+responses:
+  200:
+    description: Delete successfully borrow
+
+  404:
+    description: Not found borrow by id

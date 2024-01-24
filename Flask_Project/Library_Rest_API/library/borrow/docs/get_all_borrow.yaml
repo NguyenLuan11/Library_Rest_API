@@ -1,0 +1,11 @@
+Get all borrows
+---
+tags:
+  - BORROW
+
+responses:
+  200:
+    description: Get all borrows successful and return list of borrows
+
+  404:
+    description: Not found list of borrows

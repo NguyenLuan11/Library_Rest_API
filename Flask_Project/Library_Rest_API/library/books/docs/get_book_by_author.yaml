@@ -1,0 +1,17 @@
+Get book by author
+---
+tags:
+  - BOOKS
+
+parameters:
+  - in: path
+    name: author
+    description: The author's name of books which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully books
+
+  404:
+    description: Not found books by author's name

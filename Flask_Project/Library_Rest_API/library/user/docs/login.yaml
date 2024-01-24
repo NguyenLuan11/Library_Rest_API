@@ -1,0 +1,28 @@
+Login
+---
+tags:
+  - USER
+description: Endpoint to authenticate a user and obtain access and refresh tokens.
+parameters:
+  - in: body
+    name: body
+    description: The body should contain the user's information data
+    required: true
+    schema:
+      type: object
+      required:
+        - "username"
+        - "password"
+      properties:
+        username:
+          type: "string"
+          example: "nguyenluan"
+        password:
+          type: "string"
+          example: "170502"
+responses:
+  200:
+    description: When user logged successfully
+
+  401:
+    description: Fails to login due to bad request data

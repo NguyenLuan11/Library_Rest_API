@@ -1,0 +1,35 @@
+Add new student
+---
+tags:
+  - STUDENTS
+parameters:
+  - in: body
+    name: body
+    description: The body should contain the student's information data
+    required: true
+    schema:
+      type: object
+      required:
+        - "name"
+        - "birth_date"
+        - "gender"
+        - "class_name"
+      properties:
+        name:
+          type: "string"
+          example: "Trần Nguyên Luân"
+        birth_date:
+          type: "string"
+          example: "2002-05-17"
+        gender:
+          type: "string"
+          example: "Nam"
+        class_name:
+          type: "string"
+          example: "09_ĐH_CNPM3"
+responses:
+  200:
+    description: When added successfully new student
+
+  400:
+    description: Fails to add new student due to bad request data

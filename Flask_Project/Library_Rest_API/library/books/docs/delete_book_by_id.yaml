@@ -1,0 +1,17 @@
+Delete book by id
+---
+tags:
+  - BOOKS
+
+parameters:
+  - in: path
+    name: id
+    description: The id of book which you want to delete
+    required: true
+
+responses:
+  200:
+    description: Delete successfully book
+
+  404:
+    description: Not found book by id

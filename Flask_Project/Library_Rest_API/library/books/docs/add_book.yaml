@@ -1,0 +1,35 @@
+Add new book
+---
+tags:
+  - BOOKS
+parameters:
+  - in: body
+    name: body
+    description: The body should contain the book's information data
+    required: true
+    schema:
+      type: object
+      required:
+        - "name"
+        - "page_count"
+        - "author_id"
+        - "category_id"
+      properties:
+        name:
+          type: "string"
+          example: "HTML & CSS Basic"
+        page_count:
+          type: "int"
+          example: 500
+        author_id:
+          type: "int"
+          example: 1
+        category_id:
+          type: "int"
+          example: 1
+responses:
+  200:
+    description: When added successfully new book
+
+  400:
+    description: Fails to add new book due to bad request data

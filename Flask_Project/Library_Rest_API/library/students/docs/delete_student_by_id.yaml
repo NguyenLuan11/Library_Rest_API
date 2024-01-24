@@ -1,0 +1,17 @@
+Delete student by id
+---
+tags:
+  - STUDENTS
+
+parameters:
+  - in: path
+    name: id
+    description: The id of student which you want to delete
+    required: true
+
+responses:
+  200:
+    description: Delete successfully student
+
+  404:
+    description: Not found student by id

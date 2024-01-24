@@ -1,0 +1,11 @@
+Get all books
+---
+tags:
+  - BOOKS
+
+responses:
+  200:
+    description: Get all books successful and return list of books
+
+  404:
+    description: Not found list of books

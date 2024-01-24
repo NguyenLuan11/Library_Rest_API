@@ -1,0 +1,17 @@
+Get borrow by id
+---
+tags:
+  - BORROW
+
+parameters:
+  - in: path
+    name: id
+    description: The id of borrow which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully borrow
+
+  404:
+    description: Not found borrow by id

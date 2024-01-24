@@ -1,0 +1,17 @@
+Get author by id
+---
+tags:
+  - AUTHOR
+
+parameters:
+  - in: path
+    name: id
+    description: The id of author which you want to find
+    required: true
+
+responses:
+  200:
+    description: Get successfully author
+
+  404:
+    description: Not found author by id
